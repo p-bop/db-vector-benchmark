@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  tidb:
+    image: pingcap/tidb:latest
+    container_name: tidb
+    ports:
+      - "4000:4000"
+      - "10080:10080"
+    networks:
+      - benchmark-net
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - benchmark-net
+
+  redis:
+    image: redis/redis-stack-server:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - benchmark-net
+
+  neo4j:
+    image: neo4j:5.19
+    container_name: neo4j
+    environment:
+      - NEO4J_AUTH=neo4j/test1234
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - server.config.strict_validation.enabled=false
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    networks:
+      - benchmark-net
+
+networks:
+  benchmark-net:
+    driver: bridge
