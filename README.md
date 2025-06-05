@@ -35,7 +35,7 @@ db-vector-benchmark/
 
 The datasets used in this project are hosted on Google Drive due to their size:
 
-👉 Download GloVe and QQP embeddings [here]([url](https://drive.google.com/drive/folders/1hMHZysRs5k1jRDsScjTBICoHBefdGzEE?usp=drive_link))
+👉 Download GloVe and QQP embeddings [here](https://drive.google.com/drive/folders/1hMHZysRs5k1jRDsScjTBICoHBefdGzEE?usp=drive_link)
 
 - `glove/`: Preprocessed GloVe 100-dimensional word vectors (400,000 vectors)
 - `large/`: Combined sentence embeddings from Quora Question Pairs (QQP)
