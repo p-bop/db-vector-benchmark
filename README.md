@@ -20,6 +20,7 @@ All results were generated from the code in this repository.
 
 ## 📁 Repository Structure
 
+```
 db-vector-benchmark/
 ├── ca.pem # TLS certificate for TiDB Cloud access
 ├── docker/ # Docker Compose files for Redis, Neo4j, and local TiDB
@@ -28,6 +29,7 @@ db-vector-benchmark/
 ├── scripts/ # Data loading + benchmark execution scripts
 ├── LICENSE # MIT License
 ├── README.md # You’re here
+```
 
 ---
 
